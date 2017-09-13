@@ -1,0 +1,3 @@
+module PandaPay
+  VERSION = "0.1.2"
+end

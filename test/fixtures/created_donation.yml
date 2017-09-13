@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.pandapay.io/v1/donations
+    body:
+      encoding: UTF-8
+      string: amount=5000&currency=USD&destination=&platform_fee=0&receipt_email=firsttest%40PandaPay.io&restriction=&source=MkZO20xPRPf1segAvqxXihZPd1N
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.4.6 (Ubuntu)
+      Date:
+      - Tue, 12 Sep 2017 03:29:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"ead3811244d6b87544c4a9d20361095d"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d4f59d09-c4d2-42eb-aab3-7ca75c327417
+      X-Runtime:
+      - '0.692076'
+      Vary:
+      - Origin
+    body:
+      encoding: UTF-8
+      string: '{"id":"ch_0FKx_7S0-gbXB9UwDt9jkg","object":"donation","created":1505186984,"livemode":false,"charge_amount":5000,"platform_fee":0,"donation_after_fees":4775,"currency":"usd","payment_token":"MkZO20xPRPf1segAvqxXihZPd1N","customer":null,"grants":[],"receipt_email":"firsttest@PandaPay.io","destination":"","restriction":""}'
+    http_version: 
+  recorded_at: Tue, 12 Sep 2017 03:29:45 GMT
+recorded_with: VCR 3.0.3

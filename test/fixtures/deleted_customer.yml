@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: https://api.pandapay.io/v1/customers/cus_0moNz0xVxp11OTPncj7w9Q
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.4.6 (Ubuntu)
+      Date:
+      - Tue, 12 Sep 2017 03:55:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"50bd04e1ff55d414da3203f9b65f888d"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 957e5807-3bef-4321-baad-815a13175586
+      X-Runtime:
+      - '0.240877'
+      Vary:
+      - Origin
+    body:
+      encoding: UTF-8
+      string: '{"id":"cus_0moNz0xVxp11OTPncj7w9Q","object":"customer","email":"new_test_email@PandaPay.io","livemode":false,"cards":[{"id":"card_QD4gs3Fonhc2AIanNdsqM5lygVf","object":"card","created":1505188106,"livemode":false,"customer":"cus_0moNz0xVxp11OTPncj7w9Q","last4":"1111"}]}'
+    http_version: 
+  recorded_at: Tue, 12 Sep 2017 03:55:37 GMT
+recorded_with: VCR 3.0.3
