@@ -30,7 +30,7 @@ value:
 
 ``` ruby
 require "pandapay_api"
-PandaPay.api_key = "sk_test_..."
+PandaPay.secret_key = "sk_test_..."
 
 # Create a customer
 PandaPay::Customer.create(
